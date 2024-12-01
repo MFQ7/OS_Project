@@ -1,65 +1,34 @@
-# OS_Project
-Overview
-This project is a Python-based simulator for Operating System concepts. It demonstrates the functionality of various CPU scheduling algorithms, the Banker's Algorithm for deadlock avoidance, and page replacement algorithms. The program provides interactive inputs, calculates outputs, and visualizes results such as Gantt charts for scheduling.
+# OS Simulator Project
 
-Features
-CPU Scheduling Algorithms:
+## Overview
+This programming project is to simulate the CPU scheduling algorithms, banker’s algorithm, page replacement algorithms discussed in the class. You will write a program to implement a simulator with different algorithms. The program outputs a menu to the user, where the user selects his/her choice from the menu. In case of CPU scheduling algorithms, the simulator selects a task to run from ready queue based on the scheduling algorithm. Since the project intends to simulate a CPU scheduler, so it does not require any actual process creation or execution. When a task is scheduled, the simulator will simply print out what task is selected to run at a time. It outputs the way similar to Gantt chart style. The user can run any algorithm,
 
-First Come First Serve (FCFS)
-Shortest Job First (SJF) Non-Preemptive
-Shortest Job First (SJF) Preemptive
-Round Robin (RR)
-Deadlock Avoidance Algorithm:
+---
 
-Banker's Algorithm: Computes safe sequences and validates resource requests.
-Page Replacement Algorithms:
+## Features
+1. **CPU Scheduling Algorithms**:
+   - **First Come First Serve (FCFS)**  
+   - **Shortest Job First (SJF) Non-Preemptive**  
+   - **Shortest Job First (SJF) Preemptive**  
+   - **Round Robin (RR)**
 
-First In First Out (FIFO)
-Least Recently Used (LRU)
-Optimal Replacement
-Visualization:
+2. **Deadlock Avoidance Algorithm**:
+   - **Banker's Algorithm**: Computes safe sequences and validates resource requests.
 
-Gantt chart for scheduling algorithms using matplotlib.
-Tabulated outputs for process and page information.
-How to Run
-Prerequisites
-Python 3.x installed on your system.
-Required Python libraries:
-tabulate for table formatting.
-matplotlib for Gantt chart visualization.
-Install dependencies using:
+3. **Page Replacement Algorithms**:
+   - **First In First Out (FIFO)**
+   - **Least Recently Used (LRU)**
+   - **Optimal Replacement**
 
-bash
-Copy code
-pip install tabulate matplotlib
-Steps to Run
-Download the OS_Simulator.py or .ipynb file.
+4. **Visualization**:
+   - Gantt chart for scheduling algorithms using `matplotlib`.
+   - Tabulated outputs for process, matrix, and page information.
 
-If running a Python script:
+---
 
-bash
-Copy code
-python OS_Simulator.py
-If using a Jupyter Notebook:
-
-Open the .ipynb file in Jupyter Notebook or any compatible IDE.
-Run the cells sequentially.
-Follow the interactive menu to select the desired algorithm and input the required data.
-
-Menu Options
-On running the program, you'll be prompted to select from the following options:
-
-CPU Scheduling Algorithms
-
-Enter process details: arrival time, burst time, etc.
-Observe calculated waiting and turnaround times.
-Visualize the Gantt chart.
-Banker's Algorithm
-
-Input number of processes, resources, allocation matrix, max matrix, and available vector.
-Observe the computed safe sequence and determine whether new resource requests can be granted.
-Page Replacement Algorithms
-
-Enter the number of frames and the page reference string.
-Observe page faults, hit and miss ratios, and tabulated frame states.
-Exit the program.
+## How to Run
+### Prerequisites
+- Python 3.x installed on your system.
+- Required Python libraries:
+  - `tabulate` for table formatting.
+  - `matplotlib` for Gantt chart visualization.
